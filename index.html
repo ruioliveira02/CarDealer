@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CarDealer</title>
+
+	<meta charset="utf-8">
+	<meta name="author" content="Rui Oliveira">
+
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+
+	<script src="js/index.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body onload="showSlides();">
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+		<a class="navbar-brand text-success" href="#">CarDealer</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse h-100" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link text-light" href="#">Vehicles</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link text-light dropdown-toggle h-100" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Services
+					</a>
+					<!--Border has been added in order to fill white space between the end of navbar and the beginning of the dropdown-->
+					<div class="dropdown-menu bg-dark mt-0 border-top border-dark rounded-0" aria-labelledby="navbarDropdown" style="">
+						<a class="dropdown-item text-light" href="#">Insurance</a>
+						<a class="dropdown-item text-light" href="#">Financing</a>
+						<a class="dropdown-item text-light" href="#">Warranty</a>
+						<a class="dropdown-item text-light" href="#">Workshop</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						More Info
+					</a>
+					<!--Border has been added in order to fill white space between the end of navbar and the beginning of the dropdown-->
+					<div class="dropdown-menu bg-dark mt-0 border-top border-dark rounded-0" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item text-light" href="#">About us</a>
+						<a class="dropdown-item text-light" href="#">Our Team</a>
+						<a class="dropdown-item text-light" href="#">Corporate</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-light" href="#">Sell your car</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-light" href="http://localhost/Used Car Dealer/contact us.php">Contact Us</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+
+	<section>
+		<div class="slideshow-container">
+			<div class="w3-button slide-button left-button" onclick="changeSlide(-1);"><span class="arrows">&#10094;</span></div>
+  			<div class="w3-button slide-button right-button" onclick="changeSlide(1);"><span class="arrows">&#10095;</span></div>
+			<div class="mySlides">
+				<div class="slideshow-image show-first content-wrapper">
+					<h2 class="text-success slideshow-title">Your dream car is closer than you think</h2>
+					<h3 class="slideshow-subtitle">One of the biggest, best maintained, fleets in the country, with cars from all major brands</h3>
+
+					<div class="first-button">
+						<a class="link-wrapper">View our Entire Fleet</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="mySlides">
+				<div class="slideshow-image show-second content-wrapper">
+					<h2 class="text-success slideshow-title">Certified Workshop</h2>
+					<h3 class="slideshow-subtitle">For all major car brands.</h3>
+
+					<div class="first-button">
+						<a class="link-wrapper">Book your service</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="mySlides">
+				<div class="slideshow-image show-third content-wrapper">
+					<h2 class="text-success slideshow-title">All coverage insurance</h2>
+					<h3 class="slideshow-subtitle">Never worry about taking your much beloved car for a spin</h3>
+
+					<div class="first-button">
+						<a class="link-wrapper">Learn more</a>
+					</div>
+				</div>
+			</div>
+			<div class="text-center lower-buttons">
+				
+				<span class="dot" onclick="changeToSlide(0);"></span> 
+				<span class="dot" onclick="changeToSlide(1);"></span> 
+				<span class="dot" onclick="changeToSlide(2);"></span> 
+			</div>
+		</div>	
+	</section>
+
+	<section class="main-section">
+		<h2 class="page-title">Get your dream car</h2>
+		<div class="container-fluid">
+			<form>
+				<div class="row margin-bottom-20">
+					<div class="col">
+						<label for="make">Make:</label>
+						<br>
+						<select id="make" name="make">
+							<option value="volvo">Any</option>
+							<option value="saab">Saab</option>
+							<option value="fiat">Fiat</option>
+							<option value="audi">Audi</option>
+						</select>
+					</div>
+
+					<div class="col">
+						<label for="model">Model:</label>
+						<br>
+						<select id="model" name="model">
+							<option value="a1">Any</option>
+							<option value="a2">Clio</option>
+							<option value="a3">Punto</option>
+							<option value="a4">V40</option>
+						</select>
+					</div>
+
+					<div class="col">
+						<label for="engine">Engine:</label>
+						<br>
+						<select id="engine" name="engine">
+							<option value="any">Any</option>
+							<option value="petrol">Petrol</option>
+							<option value="diesel">Diesel</option>
+							<option value="hybrid">Hybrid</option>
+							<option value="electric">Electric</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="row margin-bottom-20">
+					<div class="col">
+						<label for="min_price">Price (min):</label>
+						<br>
+						<input id="min_price" type="number">
+					</div>
+
+					<div class="col">
+						<label for="max_price">Price (max):</label>
+						<br>
+						<input id="max_price" type="number">
+					</div>
+
+					<div class="col">
+						<label for="min_price">Year (min):</label>
+						<br>
+						<input id="min_price" type="number">
+					</div>
+
+					<div class="col">
+						<label for="max_price">Year (max):</label>
+						<br>
+						<input id="max_price" type="number">
+					</div>
+				</div>
+				
+
+				<div class="row">
+					<div class="col">
+						<label for="min_mileage">Mileage (min):</label>
+						<br>
+						<input id="min_mileage" type="number">
+					</div>
+
+					<div class="col">
+						<label for="max_mileage">Mileage (max):</label>
+						<br>
+						<input id="max_mileage" type="number">
+					</div>
+
+					<div class="col-6 text-center d-flex min-height-54">
+						<input class="btn btn-success align-self-end" type="submit" value="Search" >
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section class="main-section">
+		<div class="container-fluid">
+			<h2 class="page-title">Our Services</h2>
+			<div class="container-fluid">
+				<div class="row text-center">
+					<div class="col min-width-250">
+						<!--Icon on top of text are mix of two icons: a circle and the respective icon, hence the stack-->
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x color-red"></i>
+							<i class="fa fa-car fa-stack-1x fa-inverse"></i>
+						</span> 
+						<h3 class="name">Warranty</h3>
+						<ul class="list">
+							<li>3 year warranty + 2 year option</li>
+							<li>1 year free maintenance</li>
+						</ul>
+						<a class="color-red">Learn more</a>
+					</div>
+
+					<div class="col min-width-250">
+						<!--Icon on top of text are mix of two icons: a circle and the respective icon, hence the stack-->
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x color-yellow"></i>
+							<i class="fa fa-dollar fa-stack-1x fa-inverse"></i>
+						</span> 
+						<h3 class="name">Financing</h3>
+						<ul class="list">
+							<li>Multiple payment options</li>
+							<li>Low interest rate</li>
+						</ul>
+						<a class="color-yellow">Learn more</a>
+					</div>
+
+					<div class="col min-width-250">
+						<!--Icon on top of text are mix of two icons: a circle and the respective icon, hence the stack-->
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x color-green"></i>
+							<i class="fas fa-shield-alt fa-stack-1x fa-inverse"></i>
+						</span> 
+						<h3 class="name">Insurance</h3>
+						<ul class="list">
+							<li>All coverage</li>
+							<li>Bundles for families with multiple cars (up to 3)</li>
+						</ul>
+						<a class="color-green">Learn more</a>
+					</div>
+
+					<div class="col min-width-250">
+						<!--Icon on top of text are mix of two icons: a circle and the respective icon, hence the stack-->
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-circle fa-stack-2x color-blue"></i>
+							<i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+						</span> 
+						<h3 class="name">Workshop</h3>
+						<ul class="list">
+							<li>Authorized dealer for all major car brands</li>
+							<li>20% discount for cars purchased through us</li>
+						</ul>
+						<a class="color-blue">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="main-section">
+		<h2 class="page-title">Our Team</h2>
+		<div class="container-fluid">
+			<div class="row text-center">
+				<div class="col min-width-250 text-center">
+					<img class="image-wrap" src="img/james.jpg">
+					<h3 class="name">James Chapman</h3>
+					<h4 class="job text-success">Sales Representative</h4>
+					<p>Helping you choose the correct car at the best price is not only my job, but also my passion.</p>
+				</div>
+				<div class="col min-width-250">
+					<img class="image-wrap" src="img/bethany.jpg">
+					<h3 class="name">Bethany Collins</h3>
+					<h4 class="job text-success">Insurance Broker</h4>
+					<p>I will help you get the best possible insurance at the best possible price.</p>
+				</div>
+				<div class="col min-width-250">
+					<img class="image-wrap" src="img/sarah.jpg">
+					<h3 class="name">Sarah Daly</h3>
+					<h4 class="job text-success">Financial Broker</h4>
+					<p>Buying a car is a big investment. However, I can help soften the blow of the purchase of your new ride.</p>
+				</div>
+				<div class="col min-width-250">
+					<img class="image-wrap" src="img/richard.jpg">
+					<h3 class="name">Richard Solemon</h3>
+					<h4 class="job text-success">Lead Mechanic</h4>
+					<p>Working with cars has always been my passion since I was a child. Now, it is my job.</p>
+				</div>
+			</div>
+		</div>
+		<a class="team text-success">View our Entire Team</a>
+	</section>
+
+	<footer class="page-footer font-small bg-dark text-light pt-4">
+		<div class="container text-center text-md-left">
+			<div class="row">
+				<div class="col-md-4 mx-auto">
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">CarDealer</h5>
+					<p>Founded in 1992, CarDealer is a second-hand car showroom. Nowadays, it features one of biggest selections in the country.</p>
+				</div>
+
+				<hr class="clearfix w-100 d-md-none">
+
+				<div class="col-md-2 mx-auto">
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">More info</h5>
+
+					<ul class="list-unstyled">
+						<li>
+							<a class="text-light" href="#!">About us</a>
+						</li>
+						<li>
+							<a class="text-light" href="#!">Our Team</a>
+						</li>
+						<li>
+							<a class="text-light" href="#!">Corporate</a>
+						</li>
+					</ul>
+				</div>
+
+				<hr class="clearfix w-100 d-md-none">
+
+				<div class="col-md-2 mx-auto">
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Services</h5>
+
+					<ul class="list-unstyled">
+						<li>
+							<a class="text-light" href="#!">Insurance</a>
+						</li>
+						<li>
+							<a class="text-light" href="#!">Financing</a>
+						</li>
+						<li>
+							<a class="text-light" href="#!">Warranty</a>
+						</li>
+						<li>
+							<a class="text-light" href="#!">Workshop</a>
+						</li>
+					</ul>
+				</div>
+
+				<hr class="clearfix w-100 d-md-none">
+
+				<div class="col-md-2 mx-auto">
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Other</h5>
+
+					<ul class="list-unstyled">
+						<li>
+							<a class="text-light" href="http://localhost/Used Car Dealer/contact us.php">Contact us</a>
+						</li>
+						<li>
+							<a class="text-light" href="#!">Privacy Policy</a>
+						</li>
+						<li>
+							<a class="text-light" href="#!">Electronic Complaints Book</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<ul class="list-unstyled list-inline text-center">
+			<li class="list-inline-item">
+				<a class="btn-floating btn-fb mx-1 text-light">
+					<i class="fab fa-facebook-f"> </i>
+				</a>
+			</li>
+			<li class="list-inline-item">
+				<a class="btn-floating btn-tw mx-1 text-light">
+					<i class="fab fa-twitter"> </i>
+				</a>
+			</li>
+			<li class="list-inline-item">
+				<a class="btn-floating btn-gplus mx-1 text-light">
+					<i class="fab fa-google-plus-g"> </i>
+				</a>
+			</li>
+			<li class="list-inline-item">
+				<a class="btn-floating btn-li mx-1 text-light">
+					<i class="fab fa-linkedin-in"> </i>
+				</a>
+			</li>
+			<li class="list-inline-item">
+				<a class="btn-floating btn-dribbble mx-1 text-light">
+					<i class="fab fa-dribbble"> </i>
+				</a>
+			</li>
+		</ul>
+
+		<div class="footer-copyright text-center py-3">©
+			<script>document.write(new Date().getFullYear());</script> Copyright
+			<a class="text-light" href="#"> Rui Oliveira</a>
+		</div>
+	</footer>
+</body>
+</html>

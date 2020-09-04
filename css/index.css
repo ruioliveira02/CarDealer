@@ -1,0 +1,311 @@
+ul {
+	list-style: none;
+}
+
+a {
+	color: white;
+}
+
+input {
+	height: 50px;
+	width: 100%;
+	min-width: 200px;
+	border: solid var(--customgrey);
+	border-width: 1px;
+}
+
+input[type="submit"] {
+	width: 170px;
+	position: relative;
+}
+
+label {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+select {
+	width: 100%;
+	height: 50px;
+	min-width: 200px;
+	border: solid var(--customgrey);
+	border-width: 1px;
+}
+
+.page-title {
+	color: var(--success);
+	font-weight: bold;
+	font-size: 3.5rem;
+	margin-bottom: 20px;
+}
+
+
+.min-height-54 {
+	min-height: 54px;
+}
+
+.min-width-250 {
+	min-width: 250px;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+
+.team {
+	display: block;
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+.image-wrap {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 350px;
+	width: 80%;
+	height: auto;
+	max-height: 100%;
+}
+
+.list {
+	list-style: disc;
+	padding: 0;
+}
+
+.first-button {
+	width: 300px;
+	height: 70px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border:solid 3px;
+	border-color: #5cb85c;
+	margin-top: 5%;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.first-button:hover {
+	background-color: #5cb85c;
+	border-color: white; 
+	text-decoration: none;
+}
+
+.link-wrapper {
+	display: block;
+	text-decoration: none;
+	color: black; 
+	width: 100%;
+	height: 70px;
+	padding-top: 12px;
+	font-size: 25px;
+	text-align: center;
+}
+
+.link-wrapper:hover {
+	text-decoration: none; /*This code is needed to stop a from reverting to standard color and decoration on hover*/
+	color: black;
+}
+
+.slide-button {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	height: 100px;
+}
+
+.left-button {
+	left: 0;
+	padding-left: 5px;
+}
+
+.right-button {
+	right: 0;
+	padding-right: 5px;
+}
+
+.lower-buttons {
+	position: absolute;
+	bottom: 0;
+	left: 0; 
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.arrows {
+	width: 100%;
+	height: 100%;
+	font-size: 2rem;
+	color: white;
+}
+
+.arrows:hover {
+	color: grey;
+	background-color: rgba(10, 10, 10, 0.3);
+}
+
+.main-section {
+	margin-top: 100px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.name {
+	font-size: 2.3rem;
+}
+
+.job {
+	font-size: 1.5rem;
+}
+
+.animation {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	height: 60px;
+	border-radius: 15px;
+	border: solid 5px;
+}
+
+.animation-red {
+	border-color: var(--customred);
+}
+
+.animation-red:hover {
+	background-color: var(--customred);
+}
+
+.color-red {
+	font-size: 1.8rem;
+	color: var(--customred);
+}
+
+.color-red:hover {
+	opacity: 0.8;
+	color: var(--customred);
+	text-decoration: none;
+}
+
+.color-yellow {
+	font-size: 1.8rem;
+	color: var(--customyellow);
+}
+
+.color-yellow:hover {
+	opacity: 0.8;
+	color: var(--customyellow);
+	text-decoration: none;
+}
+
+.color-green {
+	font-size: 1.8rem;
+	color: var(--success);
+}
+
+.color-green:hover {
+	opacity: 0.8;
+	color: var(--success);
+	text-decoration: none;
+}
+
+.color-blue {
+	font-size: 1.8rem;
+	color: var(--customblue);
+}
+
+.color-blue:hover {
+	opacity: 0.8;
+	color: var(--customblue);
+	text-decoration: none;
+}
+
+
+/*******************************************************************
+*Slideshow specific*
+*******************************************************************/
+
+.slideshow-title {
+	font-size: 4.5rem;
+	font-weight: bold;
+}
+
+.slideshow-subtitle {
+	color: white;
+	 font-size: 2rem;
+}
+
+.content-wrapper {
+	padding-top: 10%;
+	padding-left: 5%;
+}
+
+.slideshow-container {
+	height: auto;
+	position: relative;
+	margin: auto;
+	min-height: 800px;
+}
+
+.slideshow-image {
+	width: 100%;
+	height: auto;
+	min-height: 800px;
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+.show-first {
+	background-image: url("../img/show_1.jpg");
+}
+
+.show-second {
+	background-image: url("../img/show_2.jpg");
+}
+
+.show-third {
+	background-image: url("../img/show_3.jpg");
+}
+
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active {
+	background-color: #717171;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+	.text {font-size: 11px}
+}

@@ -1,0 +1,63 @@
+.content {
+	resize: none !important;
+	width: 80%;
+	height: 300px;
+	margin-top: 20px;
+	border: solid var(--customgrey);
+	border-width: 1px;
+}
+
+.text-inputs {
+	border: solid var(--customgrey);
+	border-width: 1px;
+	margin-top: 20px;
+	height: 40px;
+	width: 80%;
+}
+
+.submit-button {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 40px;
+	width: 170px;
+}
+
+.text {
+	margin-top: 30px;
+	max-width: 90vw;
+}
+
+.iframe-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+span, i {
+	font-size: 1.5rem;
+}
+
+.contact-links {
+	text-decoration: none;
+}
+
+.title {
+	color: var(--success);
+	font-size: 3.5rem;
+	font-weight: bold;
+}
+
+.main-page {
+	margin-top: 20px;
+	padding-left: 5% !important;
+	padding-right: 5% !important;
+}
+
+.message {
+	font-size: 1.2rem;
+	margin-top: 20px;
+}
+
+.min-width-400 {
+	min-width: 400px;
+}
