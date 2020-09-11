@@ -6,3 +6,21 @@
 	--customblue: #036bfc;
 	--customgrey: #d1d1d1;
 }
+
+.title {
+	color: var(--success);
+	font-size: 3.5rem;
+	font-weight: bold;
+}
+
+.min-height-54 {
+	min-height: 54px;
+}
+
+.min-width-250 {
+	min-width: 250px;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}

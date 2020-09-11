@@ -5,6 +5,7 @@
 
 	<meta charset="utf-8">
 	<meta name="author" content="Rui Oliveira">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="css/contact us.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -46,8 +47,8 @@
 		}
 	}
 	?>
-	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-		<a class="navbar-brand text-success" href="#">CarDealer</a>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand text-success" href="https://ruioliveira02.github.io/CarDealer">CarDealer</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -136,7 +137,7 @@
 			</div>
 
 			<div class="col  min-width-400 text-center iframe-container">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15022.44227440797!2d-8.383815755536563!3d41.55134211799012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24fc15810695eb%3A0xd4533b77013025a7!2sBom%20Jesus%20do%20Monte%2C%20Braga!5e1!3m2!1spt-PT!2spt!4v1598979698400!5m2!1spt-PT!2spt" width="80%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15022.44227440797!2d-8.383815755536563!3d41.55134211799012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24fc15810695eb%3A0xd4533b77013025a7!2sBom%20Jesus%20do%20Monte%2C%20Braga!5e1!3m2!1spt-PT!2spt!4v1598979698400!5m2!1spt-PT!2spt" width="80%" height="600" frameborder="0" style="border:0; margin-bottom: 20px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 			</div>
 		</div>
 	</div>
