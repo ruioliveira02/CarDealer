@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>CarDealer</title>
@@ -9,12 +9,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/team.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
 	<script src="js/index.js"></script>
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -26,7 +27,7 @@
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand text-success" href="https://ruioliveira02.github.io/CarDealer">CarDealer</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon" style="color: white;"></span>
+			<span class="navbar-toggler-icon"></span>
 		</button>
 
 		<div class="collapse navbar-collapse h-100" id="navbarSupportedContent">
@@ -53,7 +54,7 @@
 					<!--Border has been added in order to fill white space between the end of navbar and the beginning of the dropdown-->
 					<div class="dropdown-menu bg-dark mt-0 border-top border-dark rounded-0" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item text-light" href="#">About us</a>
-						<a class="dropdown-item text-light" href="#">Our Team</a>
+						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/contact us.html">Our Team</a>
 						<a class="dropdown-item text-light" href="#">Corporate</a>
 					</div>
 				</li>
@@ -61,7 +62,7 @@
 					<a class="nav-link text-light" href="#">Sell your car</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link text-light" href="https://ruioliveira02.github.io/CarDealer/contact us.html">Contact Us</a>
+					<a class="nav-link text-secondary" href="https://ruioliveira02.github.io/CarDealer/contact us.html">Contact Us</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
@@ -74,7 +75,7 @@
 	<section>
 		<div class="slideshow-container">
 			<div class="w3-button slide-button left-button" onclick="changeSlide(-1);"><span class="arrows">&#10094;</span></div>
-  			<div class="w3-button slide-button right-button" onclick="changeSlide(1);"><span class="arrows">&#10095;</span></div>
+			<div class="w3-button slide-button right-button" onclick="changeSlide(1);"><span class="arrows">&#10095;</span></div>
 			<div class="mySlides">
 				<div class="slideshow-image show-first content-wrapper">
 					<h2 class="text-success slideshow-title">Pick your ride</h2>
@@ -108,12 +109,12 @@
 				</div>
 			</div>
 			<div class="text-center lower-buttons">
-				
-				<span class="dot" onclick="changeToSlide(0);"></span> 
-				<span class="dot" onclick="changeToSlide(1);"></span> 
-				<span class="dot" onclick="changeToSlide(2);"></span> 
+
+				<span class="dot" onclick="changeToSlide(0);"></span>
+				<span class="dot" onclick="changeToSlide(1);"></span>
+				<span class="dot" onclick="changeToSlide(2);"></span>
 			</div>
-		</div>	
+		</div>
 	</section>
 
 	<section class="main-section">
@@ -155,7 +156,7 @@
 						</select>
 					</div>
 				</div>
-				
+
 				<div class="row margin-bottom-20">
 					<div class="col">
 						<label for="min_price">Price (min):</label>
@@ -181,7 +182,7 @@
 						<input id="max_price" type="number">
 					</div>
 				</div>
-				
+
 
 				<div class="row margin-bottom-20">
 					<div class="col">
@@ -197,7 +198,7 @@
 					</div>
 
 					<div class="col-6 text-center d-flex min-height-54">
-						<input class="btn btn-success align-self-end" type="submit" value="Search" >
+						<input class="btn btn-success align-self-end" type="submit" value="Search">
 					</div>
 				</div>
 			</form>
@@ -214,7 +215,7 @@
 						<span class="fa-stack fa-lg">
 							<i class="fa fa-circle fa-stack-2x color-red"></i>
 							<i class="fa fa-car fa-stack-1x fa-inverse"></i>
-						</span> 
+						</span>
 						<h3 class="name">Warranty</h3>
 						<ul class="list">
 							<li>3 year warranty + 2 year option</li>
@@ -228,7 +229,7 @@
 						<span class="fa-stack fa-lg">
 							<i class="fa fa-circle fa-stack-2x color-yellow"></i>
 							<i class="fa fa-dollar fa-stack-1x fa-inverse"></i>
-						</span> 
+						</span>
 						<h3 class="name">Financing</h3>
 						<ul class="list">
 							<li>Multiple payment options</li>
@@ -242,7 +243,7 @@
 						<span class="fa-stack fa-lg">
 							<i class="fa fa-circle fa-stack-2x color-green"></i>
 							<i class="fas fa-shield-alt fa-stack-1x fa-inverse"></i>
-						</span> 
+						</span>
 						<h3 class="name">Insurance</h3>
 						<ul class="list">
 							<li>All coverage</li>
@@ -256,7 +257,7 @@
 						<span class="fa-stack fa-lg">
 							<i class="fa fa-circle fa-stack-2x color-blue"></i>
 							<i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
-						</span> 
+						</span>
 						<h3 class="name">Workshop</h3>
 						<ul class="list">
 							<li>Authorized dealer for all major car brands</li>
@@ -299,7 +300,7 @@
 				</div>
 			</div>
 		</div>
-		<a class="team text-success">View our Entire Team</a>
+		<a class="team text-success" href="https://ruioliveira02.github.io/CarDealer/team.html">View our Entire Team</a>
 	</section>
 
 	<footer class="page-footer font-small bg-dark text-light pt-4">
@@ -320,7 +321,7 @@
 							<a class="text-light" href="#!">About us</a>
 						</li>
 						<li>
-							<a class="text-light" href="#!">Our Team</a>
+							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/team.html">Our Team</a>
 						</li>
 						<li>
 							<a class="text-light" href="#!">Corporate</a>
@@ -399,7 +400,8 @@
 			</li>
 		</ul>
 
-		<div class="footer-copyright text-center py-3">©
+		<div class="footer-copyright text-center py-3">
+			©
 			<script>document.write(new Date().getFullYear());</script> Copyright
 			<a class="text-light" href="#"> Rui Oliveira</a>
 		</div>

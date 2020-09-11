@@ -14,10 +14,10 @@ input {
 	border-width: 1px;
 }
 
-input[type="submit"] {
-	width: 170px;
-	position: relative;
-}
+	input[type="submit"] {
+		width: 170px;
+		position: relative;
+	}
 
 label {
 	font-size: 1.2rem;
@@ -39,34 +39,6 @@ select {
 	margin-bottom: 20px;
 }
 
-
-.min-height-54 {
-	min-height: 54px;
-}
-
-.min-width-250 {
-	min-width: 250px;
-}
-
-.margin-bottom-20 {
-	margin-bottom: 20px;
-}
-
-.team {
-	display: block;
-	text-align: center;
-	font-size: 1.8rem;
-}
-
-.image-wrap {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 350px;
-	width: 80%;
-	height: auto;
-	max-height: 100%;
-}
-
 .list {
 	list-style: disc;
 	padding: 0;
@@ -76,7 +48,7 @@ select {
 	width: 300px;
 	height: 70px;
 	background-color: rgba(255, 255, 255, 0.6);
-	border:solid 3px;
+	border: solid 3px;
 	border-color: #5cb85c;
 	margin-top: 5%;
 	-webkit-transition: all 0.2s linear;
@@ -85,16 +57,16 @@ select {
 	transition: all 0.2s linear;
 }
 
-.first-button:hover {
-	background-color: #5cb85c;
-	border-color: white; 
-	text-decoration: none;
-}
+	.first-button:hover {
+		background-color: #5cb85c;
+		border-color: white;
+		text-decoration: none;
+	}
 
 .link-wrapper {
 	display: block;
 	text-decoration: none;
-	color: black; 
+	color: black;
 	width: 100%;
 	height: 70px;
 	padding-top: 12px;
@@ -102,10 +74,10 @@ select {
 	text-align: center;
 }
 
-.link-wrapper:hover {
-	text-decoration: none; /*This code is needed to stop a from reverting to standard color and decoration on hover*/
-	color: black;
-}
+	.link-wrapper:hover {
+		text-decoration: none; /*This code is needed to stop a from reverting to standard color and decoration on hover*/
+		color: black;
+	}
 
 .slide-button {
 	position: absolute;
@@ -129,7 +101,7 @@ select {
 .lower-buttons {
 	position: absolute;
 	bottom: 0;
-	left: 0; 
+	left: 0;
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
@@ -142,23 +114,15 @@ select {
 	color: white;
 }
 
-.arrows:hover {
-	color: grey;
-	background-color: rgba(10, 10, 10, 0.3);
-}
+	.arrows:hover {
+		color: grey;
+		background-color: rgba(10, 10, 10, 0.3);
+	}
 
 .main-section {
 	margin-top: 100px;
 	padding-left: 10%;
 	padding-right: 10%;
-}
-
-.name {
-	font-size: 2.3rem;
-}
-
-.job {
-	font-size: 1.5rem;
 }
 
 .animation {
@@ -174,53 +138,53 @@ select {
 	border-color: var(--customred);
 }
 
-.animation-red:hover {
-	background-color: var(--customred);
-}
+	.animation-red:hover {
+		background-color: var(--customred);
+	}
 
 .color-red {
 	font-size: 1.8rem;
 	color: var(--customred);
 }
 
-.color-red:hover {
-	opacity: 0.8;
-	color: var(--customred);
-	text-decoration: none;
-}
+	.color-red:hover {
+		opacity: 0.8;
+		color: var(--customred);
+		text-decoration: none;
+	}
 
 .color-yellow {
 	font-size: 1.8rem;
 	color: var(--customyellow);
 }
 
-.color-yellow:hover {
-	opacity: 0.8;
-	color: var(--customyellow);
-	text-decoration: none;
-}
+	.color-yellow:hover {
+		opacity: 0.8;
+		color: var(--customyellow);
+		text-decoration: none;
+	}
 
 .color-green {
 	font-size: 1.8rem;
 	color: var(--success);
 }
 
-.color-green:hover {
-	opacity: 0.8;
-	color: var(--success);
-	text-decoration: none;
-}
+	.color-green:hover {
+		opacity: 0.8;
+		color: var(--success);
+		text-decoration: none;
+	}
 
 .color-blue {
 	font-size: 1.8rem;
 	color: var(--customblue);
 }
 
-.color-blue:hover {
-	opacity: 0.8;
-	color: var(--customblue);
-	text-decoration: none;
-}
+	.color-blue:hover {
+		opacity: 0.8;
+		color: var(--customblue);
+		text-decoration: none;
+	}
 
 
 /*******************************************************************
@@ -235,7 +199,7 @@ select {
 
 .slideshow-subtitle {
 	color: white;
-	 font-size: 2rem;
+	font-size: 2rem;
 }
 
 .content-wrapper {
@@ -255,8 +219,8 @@ select {
 	width: 100%;
 	height: auto;
 	min-height: 800px;
-	background-size:cover;
-	background-position:center;
+	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 }
 
@@ -309,5 +273,7 @@ select {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-	.text {font-size: 11px}
+	.text {
+		font-size: 11px
+	}
 }
