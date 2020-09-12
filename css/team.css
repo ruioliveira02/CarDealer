@@ -1,25 +1,4 @@
-﻿.paralax {
-    background-image: url("../img/show_2.jpg");
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.content-section {
-    margin-top: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
-    }
-}
-
-.name {
+﻿.name {
     font-size: 2.3rem;
 }
 
