@@ -5,6 +5,7 @@
 	--customyellow: #fcba03;
 	--customblue: #036bfc;
 	--customgrey: #d1d1d1;
+	--custompurple: #8c53ad;
 }
 
 .container .dropdown-menu {
@@ -38,6 +39,10 @@
 	min-width: 250px;
 }
 
+.min-width-500 {
+	min-width: 500px;
+}
+
 .padding-top-20 {
 	padding-top: 20px;
 }
@@ -53,6 +58,40 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.text-wrapper {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.text-red {
+	color: var(--customred);
+}
+
+.text-yellow {
+	color: var(--customyellow);
+}
+
+
+.text-blue {
+	color: var(--customblue);
+}
+
+.text-grey {
+	color: var(--customgrey);
+}
+
+.text-purple {
+	color: var(--custompurple);
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.mt-150 {
+	margin-top: 150px;
 }
 
 @media only screen and (max-device-width: 1366px) {

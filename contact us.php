@@ -76,7 +76,7 @@
 					</a>
 					<!--Border has been added in order to fill white space between the end of navbar and the beginning of the dropdown-->
 					<div class="dropdown-menu bg-dark mt-0 border-top border-dark rounded-0" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item text-light" href="#">About us</a>
+						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/about us.html">About us</a>
 						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/team.html">Our Team</a>
 						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/corporate.html">Corporate</a>
 					</div>
@@ -157,13 +157,13 @@
 
 					<ul class="list-unstyled">
 						<li>
-							<a class="text-light" href="#!">About us</a>
+							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/about us.html">About us</a>
 						</li>
 						<li>
-							<a class="text-light" href="#!">Our Team</a>
+							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/team.html">Our Team</a>
 						</li>
 						<li>
-							<a class="text-light" href="#!">Corporate</a>
+							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/corporate.html">Corporate</a>
 						</li>
 					</ul>
 				</div>
@@ -196,7 +196,7 @@
 
 					<ul class="list-unstyled">
 						<li>
-							<a class="text-light" href="#!">Contact us</a>
+							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/contact us.html">Contact us</a>
 						</li>
 						<li>
 							<a class="text-light" href="#!">Privacy Policy</a>
