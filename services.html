@@ -9,12 +9,13 @@
 
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/jobs.css">
+    <link rel="stylesheet" type="text/css" href="css/services.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
     <script src="js/corporate.js"></script>
 
@@ -74,91 +75,104 @@
 
     <section>
         <div class="paralax"></div>
-        <div class="text-wrapper">
-            <h1 class="title">Let's work together</h1>
-            <h5>We are looking for professional, hard working and passionate individuals to join our company.</h5>
-        </div> 
+        <div class="text-wrapper mt-30">
+            <h1 class="title">Our Services</h1>
+        </div>
     </section>
 
-    <section class="main">
-        <div class="department">
-            <a onclick="display(0);" class="full-size">
-                <span class="department-name">Sales Department</span>
-                <span id="plus_sales" class="float-right department-name">+</span>
-            </a>
-        </div>
-        <div id="sales" class="text-center hide">
-            <span class="text-center no-job">There are no jobs available</span>
-        </div>
-
-        <div class="department">
-            <a onclick="display(1);" class="full-size">
-                <span class="text-left department-name">Financial Department</span>
-                <span id="plus_financial" class="float-right department-name">+</span>
-            </a>
-        </div>
-        <div id="financial" class="hide">
-            <div class="row padding-top-20">
-                <!--Margin bottom was added to separate cols on mobile-->
-                <div class="col min-width-250 margin-bottom-20">
-                    <div class="job-cell senior-accountant">
-                        <a class="text-success job-title" href="https://ruioliveira02.github.io">Senior Accountant</a>
-                    </div>
+    <section id="insurance" class="text-wrapper mt-150">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h2 class="service">Insurance</h2>
+                    <h5>We offer:</h5>
+                    <ul>
+                        <li><img src="img/check.png" /><span class="list-text">All Coverage Insurance for up to 3 vehicles</span></li>
+                        <li><img src="img/check.png" /><span class="list-text">Replacement vehicle of same price point and segment</span></li>
+                        <li><img src="img/check.png" /><span class="list-text">Travel Assistence 24/7</span></li>
+                    </ul>
                 </div>
-                <div class="col min-width-250 margin-bottom-20">
-                    <div class="job-cell junior-accountant">
-                        <a class="text-success job-title" href="https://ruioliveira02.github.io">Junior Accountant</a>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-
-        <div class="department">
-            <a onclick="display(2);" class="full-size">
-                <span class="text-left department-name">Marketing Department</span>
-                <span id="plus_marketing" class="float-right department-name">+</span>
-            </a>
-        </div>
-        <div id="marketing" class="hide">
-            <div class="row padding-top-20">
-                <div class="col min-width-250">
-                    <div class="job-cell marketing">
-                        <a class="text-success job-title" href="https://ruioliveira02.github.io">Marketing Director</a>
-                    </div>
-                </div>
-                <div class="col min-width-250">
-                    <div class="job-cell social-media">
-                        <a class="text-success job-title" href="https://ruioliveira02.github.io">Social Media Manager</a>
-                    </div>
-                </div>
-                <div class="col min-width-250">
-                    <div class="job-cell seo">
-                        <a class="text-success job-title" href="https://ruioliveira02.github.io">SEO Specialist</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="department">
-            <a onclick="display(3);" class="full-size">
-                <span class="text-left department-name">Workshop</span>
-                <span id="plus_workshop" class="float-right department-name">+</span>
-            </a>
-        </div>
-        <div id="workshop" class="hide">
-            <div class="row padding-top-20">
-                <div class="col min-width-250">
-                    <div class="job-cell gearbox">
-                        <a class="text-success job-title" href="https://ruioliveira02.github.io">Gearbox Specialist</a>
-                    </div>
+                <div class="col text-center">
+                    <img class="image-container" src="img/insurance.jpg"/>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="page-footer font-small bg-dark text-light pt-4" style="margin-top: 10px;">
+    <section id="financing" class="text-wrapper mt-150">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h2 class="service">Financing</h2>
+                    <h5>We offer:</h5>
+                    <ul>
+                        <li><img src="img/check.png" /><span class="list-text">Contracts with lots of major banks</span></li>
+                        <li><img src="img/check.png" /><span class="list-text">Multiple Payment Plans (up to 7 years)</span></li>
+                        <li><img src="img/check.png" /><span class="list-text">Ability to pay off debt at any time</span></li>
+                    </ul>
+                </div>
+
+                <div class="col text-center">
+                    <img class="image-container" src="img/financing.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="warranty" class="text-wrapper mt-150">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h2 class="service">Warranty</h2>
+                    <h5>We offer:</h5>
+                    <ul>
+                        <li><img src="img/check.png" /><span class="list-text">3 year warranty on all vehicles + 2 year option</span></li>
+                        <li><img src="img/check.png" /><span class="list-text">No mileage limit (does not apply to company cars)</span></li>
+                        <li><img src="img/check.png" /><span class="list-text">Replacement vehicle of same price point and segment</span></li>
+                        <li><img src="img/check.png" /><span class="list-text">All repairs are conducted by certified personnel using only new original parts</span></li>
+                    </ul>
+                </div>
+
+                <div class="col text-center">
+                    <img class="image-container" src="img/warranty.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="workshop" class="text-wrapper mt-150">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h2 class="service">Workshop</h2>
+                    <h5>We offer:</h5>
+                    <div class="list-wrapper">
+                        <ul>
+                            <li><img src="img/check.png"/><span class="list-text">20% off for CarDealer clients</span></li>
+                            <li><img src="img/check.png" /><span class="list-text">48h turn around period for all vehicles</span></li>
+                            <li><img src="img/check.png" /><span class="list-text">No booking required</span></li>
+                            <li><img src="img/check.png" /><span class="list-text">Only original parts used</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col text-center">
+                    <img class="image-container" src="img/workshop.jpg"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center mt-100">
+        <h2 class="service" style="color: inherit;">Any questions?</h2>
+        <div class="button-wrapper">
+            <a class="link-wrapper" href="https://ruioliveira02.github.io/CarDealer/contact us.html">Feel free to contact us</a>
+        </div>
+        
+    </section>
+
+    <footer class="page-footer font-small bg-dark text-light pt-4 mt-10">
         <div class="container text-center text-md-left">
             <div class="row">
                 <div class="col-md-4 mx-auto">

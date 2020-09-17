@@ -64,10 +64,10 @@
 					</a>
 					<!--Border has been added in order to fill white space between the end of navbar and the beginning of the dropdown-->
 					<div class="dropdown-menu bg-dark mt-0 border-top border-dark rounded-0" aria-labelledby="navbarDropdown" style="">
-						<a class="dropdown-item text-light" href="#">Insurance</a>
-						<a class="dropdown-item text-light" href="#">Financing</a>
-						<a class="dropdown-item text-light" href="#">Warranty</a>
-						<a class="dropdown-item text-light" href="#">Workshop</a>
+						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#insurance">Insurance</a>
+                        <a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#financing">Financing</a>
+                        <a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#warranty">Warranty</a>
+                        <a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#workshop">Workshop</a>
 					</div>
 				</li>
 				<li class="nav-item dropdown">
@@ -174,19 +174,19 @@
 					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Services</h5>
 
 					<ul class="list-unstyled">
-						<li>
-							<a class="text-light" href="#!">Insurance</a>
-						</li>
-						<li>
-							<a class="text-light" href="#!">Financing</a>
-						</li>
-						<li>
-							<a class="text-light" href="#!">Warranty</a>
-						</li>
-						<li>
-							<a class="text-light" href="#!">Workshop</a>
-						</li>
-					</ul>
+                        <li>
+                            <a class="text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#insurance">Insurance</a>
+                        </li>
+                        <li>
+                            <a class="text-light" href="https://ruioliveira02.github.io/CarDealer/services.htmlfinancing">Financing</a>
+                        </li>
+                        <li>
+                            <a class="text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#warranty">Warranty</a>
+                        </li>
+                        <li>
+                            <a class="text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#workshop">Workshop</a>
+                        </li>
+                    </ul>
 				</div>
 
 				<hr class="clearfix w-100 d-md-none">
