@@ -1,0 +1,33 @@
+﻿.step {
+    font-size: 1.4rem;
+    margin-top: 40px;
+}
+
+.development {
+    margin-top: 20px;
+}
+
+ol {
+    list-style: none;
+    counter-reset: li;
+}
+
+li {
+    counter-increment: li;
+}
+
+li::before {
+    color: var(--custompurple);
+    content: counter(li);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em
+}
+
+u {
+    color: var(--customblue);
+}
+
+p {
+    font-size: 1rem;
+}
