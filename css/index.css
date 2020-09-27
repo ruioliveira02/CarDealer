@@ -6,32 +6,6 @@ a {
 	color: white;
 }
 
-input {
-	height: 50px;
-	width: 100%;
-	min-width: 200px;
-	border: solid var(--customgrey);
-	border-width: 1px;
-}
-
-	input[type="submit"] {
-		width: 170px;
-		position: relative;
-	}
-
-label {
-	font-size: 1.2rem;
-	font-weight: 600;
-}
-
-select {
-	width: 100%;
-	height: 50px;
-	min-width: 200px;
-	border: solid var(--customgrey);
-	border-width: 1px;
-}
-
 .page-title {
 	color: var(--success);
 	font-weight: bold;

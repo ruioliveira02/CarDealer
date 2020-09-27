@@ -98,6 +98,10 @@
 	margin-top: 150px;
 }
 
+.mb-30 {
+	margin-bottom: 30px;
+}
+
 @media only screen and (max-device-width: 1366px) {
 	.parallax {
 		background-attachment: scroll;
