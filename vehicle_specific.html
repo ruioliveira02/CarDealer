@@ -18,14 +18,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
-    <script src="js/corporate.js"></script>
+    <script src="js/index.js"></script>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body onload="showSlides();">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand text-success" href="https://ruioliveira02.github.io/CarDealer">CarDealer</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,8 +76,33 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col min-width-450" style="margin-top: 30px; height: 500px;justify-content: center;">
-                <img src="img/bmw.jpg" />
+            <div class="col min-width-450 image-div-wrapper">
+                <div class="slideshow-container" style="min-height: 500px;">
+                    <div class="w3-button slide-button left-button" onclick="changeSlide(-1);"><span class="arrows">&#10094;</span></div>
+                    <div class="w3-button slide-button right-button" onclick="changeSlide(1);"><span class="arrows">&#10095;</span></div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="img/bmw1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="img/bmw2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="img/bmw3.jpg" style="width:100%">
+                    </div>
+                </div>
+                <br>
+
+                <div class="text-center lower-buttons">
+                    <span class="dot" onclick="changeToSlide(0);"></span>
+                    <span class="dot" onclick="changeToSlide(1);"></span>
+                    <span class="dot" onclick="changeToSlide(2);"></span>
+                </div>
             </div>
             <div class="col min-width-450" style="height: 500px; margin-top: 30px;">
                 <div class="row">

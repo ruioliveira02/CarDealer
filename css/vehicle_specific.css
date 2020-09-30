@@ -6,3 +6,8 @@
     color: var(--success);
     font-weight: bold;
 }
+
+.image-div-wrapper {
+    margin-top: 30px;
+    justify-content: center;
+}
