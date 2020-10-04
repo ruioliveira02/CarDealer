@@ -56,7 +56,7 @@
 		<div class="collapse navbar-collapse h-100" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a class="nav-link text-light" href="#">Vehicles</a>
+					<a class="nav-link text-light" href="https://ruioliveira02.github.io/CarDealer/vehicles.html">Vehicles</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link text-light dropdown-toggle h-100" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,10 +64,10 @@
 					</a>
 					<!--Border has been added in order to fill white space between the end of navbar and the beginning of the dropdown-->
 					<div class="dropdown-menu bg-dark mt-0 border-top border-dark rounded-0" aria-labelledby="navbarDropdown" style="">
-						<a class="dropdown-item text-light" href="#">Insurance</a>
-						<a class="dropdown-item text-light" href="#">Financing</a>
-						<a class="dropdown-item text-light" href="#">Warranty</a>
-						<a class="dropdown-item text-light" href="#">Workshop</a>
+						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#insurance">Insurance</a>
+                        <a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#financing">Financing</a>
+                        <a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#warranty">Warranty</a>
+                        <a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#workshop">Workshop</a>
 					</div>
 				</li>
 				<li class="nav-item dropdown">
@@ -76,13 +76,13 @@
 					</a>
 					<!--Border has been added in order to fill white space between the end of navbar and the beginning of the dropdown-->
 					<div class="dropdown-menu bg-dark mt-0 border-top border-dark rounded-0" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item text-light" href="#">About us</a>
-						<a class="dropdown-item text-light" href="#">Our Team</a>
-						<a class="dropdown-item text-light" href="#">Corporate</a>
+						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/about us.html">About us</a>
+						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/team.html">Our Team</a>
+						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/corporate.html">Corporate</a>
 					</div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link text-light" href="#">Sell your car</a>
+					<a class="nav-link text-light" href="https://ruioliveira02.github.io/CarDealer/sell.html">Sell your car</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link text-secondary" href="#">Contact Us</a>
@@ -157,13 +157,13 @@
 
 					<ul class="list-unstyled">
 						<li>
-							<a class="text-light" href="#!">About us</a>
+							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/about us.html">About us</a>
 						</li>
 						<li>
-							<a class="text-light" href="#!">Our Team</a>
+							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/team.html">Our Team</a>
 						</li>
 						<li>
-							<a class="text-light" href="#!">Corporate</a>
+							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/corporate.html">Corporate</a>
 						</li>
 					</ul>
 				</div>
@@ -174,19 +174,19 @@
 					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Services</h5>
 
 					<ul class="list-unstyled">
-						<li>
-							<a class="text-light" href="#!">Insurance</a>
-						</li>
-						<li>
-							<a class="text-light" href="#!">Financing</a>
-						</li>
-						<li>
-							<a class="text-light" href="#!">Warranty</a>
-						</li>
-						<li>
-							<a class="text-light" href="#!">Workshop</a>
-						</li>
-					</ul>
+                        <li>
+                            <a class="text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#insurance">Insurance</a>
+                        </li>
+                        <li>
+                            <a class="text-light" href="https://ruioliveira02.github.io/CarDealer/services.htmlfinancing">Financing</a>
+                        </li>
+                        <li>
+                            <a class="text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#warranty">Warranty</a>
+                        </li>
+                        <li>
+                            <a class="text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#workshop">Workshop</a>
+                        </li>
+                    </ul>
 				</div>
 
 				<hr class="clearfix w-100 d-md-none">
@@ -196,7 +196,7 @@
 
 					<ul class="list-unstyled">
 						<li>
-							<a class="text-light" href="#!">Contact us</a>
+							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/contact us.html">Contact us</a>
 						</li>
 						<li>
 							<a class="text-light" href="#!">Privacy Policy</a>

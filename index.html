@@ -9,6 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/search.css">
 	<link rel="stylesheet" type="text/css" href="css/team.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -33,7 +34,7 @@
 		<div class="collapse navbar-collapse h-100" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a class="nav-link text-light" href="#">Vehicles</a>
+					<a class="nav-link text-light" href="https://ruioliveira02.github.io/CarDealer/vehicles.html">Vehicles</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link text-light dropdown-toggle h-100" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -41,10 +42,10 @@
 					</a>
 					<!--Border has been added in order to fill white space between the end of navbar and the beginning of the dropdown-->
 					<div class="dropdown-menu bg-dark mt-0 border-top border-dark rounded-0" aria-labelledby="navbarDropdown" style="">
-						<a class="dropdown-item text-light" href="#">Insurance</a>
-						<a class="dropdown-item text-light" href="#">Financing</a>
-						<a class="dropdown-item text-light" href="#">Warranty</a>
-						<a class="dropdown-item text-light" href="#">Workshop</a>
+						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#insurance">Insurance</a>
+						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#financing">Financing</a>
+						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#warranty">Warranty</a>
+						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#workshop">Workshop</a>
 					</div>
 				</li>
 				<li class="nav-item dropdown">
@@ -53,21 +54,21 @@
 					</a>
 					<!--Border has been added in order to fill white space between the end of navbar and the beginning of the dropdown-->
 					<div class="dropdown-menu bg-dark mt-0 border-top border-dark rounded-0" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item text-light" href="#">About us</a>
-						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/contact us.html">Our Team</a>
-						<a class="dropdown-item text-light" href="#">Corporate</a>
+						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/about us.html">About us</a>
+						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/team.html">Our Team</a>
+						<a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/corporate.html">Corporate</a>
 					</div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link text-light" href="#">Sell your car</a>
+					<a class="nav-link text-light" href="https://ruioliveira02.github.io/CarDealer/sell.html">Sell your car</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link text-secondary" href="https://ruioliveira02.github.io/CarDealer/contact us.html">Contact Us</a>
+					<a class="nav-link text-light" href="https://ruioliveira02.github.io/CarDealer/contact us.html">Contact Us</a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
 				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				<button href="https://ruioliveira02.github.io/CarDealer/vehicles.html" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 			</form>
 		</div>
 	</nav>
@@ -120,7 +121,7 @@
 	<section class="main-section">
 		<h2 class="page-title">Get your dream car</h2>
 		<div class="container-fluid">
-			<form>
+			<form action="vehicles.php" method="get">
 				<div class="row margin-bottom-20">
 					<div class="col">
 						<label for="make">Make:</label>
@@ -134,13 +135,13 @@
 					</div>
 
 					<div class="col">
-						<label for="model">Model:</label>
+						<label for="model">Style:</label>
 						<br>
-						<select id="model" name="model">
-							<option value="a1">Any</option>
-							<option value="a2">Clio</option>
-							<option value="a3">Punto</option>
-							<option value="a4">V40</option>
+						<select id="model" name="model" autocomplete="off">
+							<option value="any">Any</option>
+							<option value="coupe">Coupe</option>
+							<option value="sedan">Sedan</option>
+							<option value="sport">Sport</option>
 						</select>
 					</div>
 
@@ -161,25 +162,25 @@
 					<div class="col">
 						<label for="min_price">Price (min):</label>
 						<br>
-						<input id="min_price" type="number">
+						<input min="0" id="min_price" name="min_price" type="number">
 					</div>
 
 					<div class="col">
 						<label for="max_price">Price (max):</label>
 						<br>
-						<input id="max_price" type="number">
+						<input min="0" id="max_price" name="max_price" type="number">
 					</div>
 
 					<div class="col">
-						<label for="min_price">Year (min):</label>
+						<label for="min_year">Year (min):</label>
 						<br>
-						<input id="min_price" type="number">
+						<input min="0"  id="min_year" name="min_year" type="number">
 					</div>
 
 					<div class="col">
-						<label for="max_price">Year (max):</label>
+						<label for="max_year">Year (max):</label>
 						<br>
-						<input id="max_price" type="number">
+						<input min="0" id="max_year" name="max_year" type="number">
 					</div>
 				</div>
 
@@ -188,13 +189,13 @@
 					<div class="col">
 						<label for="min_mileage">Mileage (min):</label>
 						<br>
-						<input id="min_mileage" type="number">
+						<input min="0" id="min_mileage" name="min_mileage" type="number">
 					</div>
 
 					<div class="col">
 						<label for="max_mileage">Mileage (max):</label>
 						<br>
-						<input id="max_mileage" type="number">
+						<input min="0" id="max_mileage" name="max_mileage" type="number">
 					</div>
 
 					<div class="col-6 text-center d-flex min-height-54">
@@ -277,7 +278,7 @@
 				<div class="col min-width-250 text-center margin-bottom-20">
 					<img class="image-wrap" src="img/james.jpg">
 					<h3 class="name">James Chapman</h3>
-					<h4 class="job text-success">Sales Representative</h4>
+					<h4 class="job text-success">CEO</h4>
 					<p>Helping you choose the correct car at the best price is not only my job, but also my passion.</p>
 				</div>
 				<div class="col min-width-250 margin-bottom-20">
@@ -318,13 +319,13 @@
 
 					<ul class="list-unstyled">
 						<li>
-							<a class="text-light" href="#!">About us</a>
+							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/about us.html">About us</a>
 						</li>
 						<li>
 							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/team.html">Our Team</a>
 						</li>
 						<li>
-							<a class="text-light" href="#!">Corporate</a>
+							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/corporate.html">Corporate</a>
 						</li>
 					</ul>
 				</div>
@@ -336,16 +337,16 @@
 
 					<ul class="list-unstyled">
 						<li>
-							<a class="text-light" href="#!">Insurance</a>
+							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#insurance">Insurance</a>
 						</li>
 						<li>
-							<a class="text-light" href="#!">Financing</a>
+							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/services.htmlfinancing">Financing</a>
 						</li>
 						<li>
-							<a class="text-light" href="#!">Warranty</a>
+							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#warranty">Warranty</a>
 						</li>
 						<li>
-							<a class="text-light" href="#!">Workshop</a>
+							<a class="text-light" href="https://ruioliveira02.github.io/CarDealer/services.html#workshop">Workshop</a>
 						</li>
 					</ul>
 				</div>

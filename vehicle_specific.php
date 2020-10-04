@@ -7,20 +7,31 @@
     <meta name="author" content="Rui Oliveira">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="css/team.css">
+
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/vehicles.css">
+    <link rel="stylesheet" type="text/css" href="css/vehicle_specific.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <script src="js/index.js"></script>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body>
+
+<?php
+    require("car.php");
+    $GLOBALS["car"] = getCar($_GET["id"]);
+?>
+
+<body onload="showSlides();setSlideCount(<?php echo count($GLOBALS["car"]->images);?>);">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand text-success" href="https://ruioliveira02.github.io/CarDealer">CarDealer</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +41,7 @@
         <div class="collapse navbar-collapse h-100" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="https://ruioliveira02.github.io/CarDealer/vehicles.html">Vehicles</a>
+                    <a class="nav-link text-secondary" href="https://ruioliveira02.github.io/CarDealer/vehicles.html">Vehicles</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link text-light dropdown-toggle h-100" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -51,7 +62,7 @@
                     <!--Border has been added in order to fill white space between the end of navbar and the beginning of the dropdown-->
                     <div class="dropdown-menu bg-dark mt-0 border-top border-dark rounded-0" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/about us.html">About us</a>
-                        <a class="dropdown-item text-secondary" href="https://ruioliveira02.github.io/CarDealer/team.html">Our Team</a>
+                        <a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/team.html">Our Team</a>
                         <a class="dropdown-item text-light" href="https://ruioliveira02.github.io/CarDealer/corporate.html">Corporate</a>
                     </div>
                 </li>
@@ -68,104 +79,123 @@
             </form>
         </div>
     </nav>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col min-width-450 image-div-wrapper">
+                <div class="slideshow-container" style="min-height: 500px;">
+                    <div class="w3-button slide-button left-button" onclick="changeSlide(-1);"><span class="arrows">&#10094;</span></div>
+                    <div class="w3-button slide-button right-button" onclick="changeSlide(1);"><span class="arrows">&#10095;</span></div>
 
-    <section>
-        <div class="paralax"></div>
-        <div class="content-section">
-            <h1 class="title">Our Team</h1>
-            <p>We are here to serve you and you only with the best selection of vehicles at the best price.</p>
+                    <?php
+                    for($i = 1; $i <= count($GLOBALS["car"]->images); $i++)
+                    {
+                    	echo '<div class="mySlides">
+                    	<div class="numbertext">' . $i . ' / ' . count($GLOBALS["car"]->images) . '</div>
+                    	<img src="' . $GLOBALS["car"]->images[$i - 1] . '" style="width:100%">
+                    	</div>';
+                    }
+                    ?>
 
-            <span>Want to work with us?</span>
-            <a class="text-success link">Check out our job opportunities</a>
+                    
+
+                    <!--div class="mySlides">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="img/bmw2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="img/bmw3.jpg" style="width:100%">
+                    </div-->
+                </div>
+                <br>
+
+
+                <!--div class="text-center lower-buttons">
+                    <span class="dot" onclick="changeToSlide(0);"></span>
+                    <span class="dot" onclick="changeToSlide(1);"></span>
+                    <span class="dot" onclick="changeToSlide(2);"></span>
+                </div-->
+            </div>
+            <div class="col min-width-450" style="height: 500px; margin-top: 30px;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-8">
+                            <h1 class="title"><?php echo $GLOBALS["car"]->name; ?></h1>
+                        </div>
+                        <div class="col-4">
+                            <h2 style="line-height:4rem;"><?php echo $GLOBALS["car"]->price; ?>€</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-road other-info"></i><span class="other-info"><?php echo $GLOBALS["car"]->mileage; ?> miles</span>
+                        </div>
+                        <div class="col">
+                            <i class="fas fa-gas-pump other-info"></i><span class="other-info"><?php echo ucfirst($GLOBALS["car"]->fuel); ?></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container-fluid" style="margin-top: 15px;">
+                    <div class="row">
+                        <div class="col">
+                            <span class="topic">Engine:</span>
+                            <span><?php echo $GLOBALS["car"]->engine; ?></span>
+                        </div>
+                        <div class="col">
+                            <span class="topic">CO2 emissions:</span>
+                            <span><?php echo $GLOBALS["car"]->co2; ?> g/Km</span>
+                        </div>
+                    </div>
+                    <div class="row information-row">
+                        <div class="col">
+                            <span class="topic">Power:</span>
+                            <span><?php echo $GLOBALS["car"]->power; ?> bhp</span>
+                        </div>
+                        <div class="col">
+                            <span class="topic">Drive:</span>
+                            <span><?php echo $GLOBALS["car"]->drive; ?></span>
+                        </div>
+                    </div>
+                    <div class="row information-row">
+                        <div class="col">
+                            <span class="topic">Peak Torque:</span>
+                            <span><?php echo $GLOBALS["car"]->torque; ?></span>
+                        </div>
+                        <div class="col">
+                            <span class="topic">Consumption (advertised):</span>
+                            <span><?php echo $GLOBALS["car"]->consumption; ?> mpg</span>
+                        </div>
+                    </div>
+                    <div class="row information-row">
+                        <div class="col">
+                            <span class="topic">Gearbox:</span>
+                            <span><?php echo $GLOBALS["car"]->gearbox; ?></span>
+                        </div>
+                        <div class="col">
+                            <span class="topic">Weight:</span>
+                            <span><?php echo $GLOBALS["car"]->weight; ?> Kg</span>
+                        </div>
+                    </div>
+                    <div class="row information-row">
+                        <div class="col">
+                            <span class="topic">0-60 mph:</span>
+                            <span><?php echo $GLOBALS["car"]->acceleration; ?>s</span>
+                        </div>
+                        <div class="col">
+                            <span class="topic">Number of doors:</span>
+                            <span><?php echo $GLOBALS["car"]->doors; ?></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <section class="content-section">
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col min-width-250 text-center margin-bottom-20">
-                    <img class="image-wrap" src="img/james.jpg">
-                    <h3 class="name">James Chapman</h3>
-                    <h4 class="job text-success">CEO</h4>
-                    <p>Helping you choose the correct car at the best price is not only my job, but also my passion.</p>
-                </div>
-                <div class="col min-width-250 margin-bottom-20">
-                    <img class="image-wrap" src="img/ali.jpg">
-                    <h3 class="name">Ali Johnson</h3>
-                    <h4 class="job text-success">Sales Representative</h4>
-                    <p>Choosing a car can be quite stressful. Luckily, you don't have to do it alone.</p>
-                </div>
-                <div class="col min-width-250 margin-bottom-20">
-                    <img class="image-wrap" src="img/ben.jpg">
-                    <h3 class="name">Ben Stokes</h3>
-                    <h4 class="job text-success">Sales Representative</h4>
-                    <p>Your car is your choice. My job is to provide you with the best options and information.</p>
-                </div>
-                <div class="col min-width-250 margin-bottom-20">
-                    <img class="image-wrap" src="img/amy.jpg">
-                    <h3 class="name">Amy Pearson</h3>
-                    <h4 class="job text-success">Sales Representative</h4>
-                    <p>I can make buying your dream car a simple and enjoyable process.</p>
-                </div>
-            </div>
-
-            <div class="row text-center">
-                <div class="col min-width-250 margin-bottom-20">
-                    <img class="image-wrap" src="img/bethany.jpg">
-                    <h3 class="name">Bethany Collins</h3>
-                    <h4 class="job text-success">Insurance Broker</h4>
-                    <p>I will help you get the best possible insurance at the best possible price.</p>
-                </div>
-                <div class="col min-width-250 margin-bottom-20">
-                    <img class="image-wrap" src="img/john.jpg">
-                    <h3 class="name">John Clinton</h3>
-                    <h4 class="job text-success">Insurance Broker</h4>
-                    <p>Driving your car everyday should not concern you. I can make that happen.</p>
-                </div>
-                <div class="col min-width-250 margin-bottom-20">
-                    <img class="image-wrap" src="img/sarah.jpg">
-                    <h3 class="name">Sarah Daly</h3>
-                    <h4 class="job text-success">Financial Broker</h4>
-                    <p>Buying a car is a big investment. However, I can help soften the blow of the purchase of your new ride.</p>
-                </div>
-                <div class="col min-width-250 margin-bottom-20">
-                    <img class="image-wrap" src="img/carlos.jpg">
-                    <h3 class="name">Carlos Dickinson</h3>
-                    <h4 class="job text-success">Financial Broker</h4>
-                    <p>Let's talk and turn money into a non issue.</p>
-                </div>
-            </div>
-
-            <div class="row text-center">
-                <div class="col min-width-250 text-center margin-bottom-20">
-                    <img class="image-wrap" src="img/catherine.jpg">
-                    <h3 class="name">Catherine Williams</h3>
-                    <h4 class="job text-success">Financial Broker</h4>
-                    <p>There should be no reason as to why you can't purchase your dream ride.</p>
-                </div>
-                <div class="col min-width-250 margin-bottom-20">
-                    <img class="image-wrap" src="img/richard.jpg">
-                    <h3 class="name">Richard Solemon</h3>
-                    <h4 class="job text-success">Lead Mechanic</h4>
-                    <p>Working with cars has always been my passion since I was a child. Now, it is my job.</p>
-                </div>
-                <div class="col min-width-250 text-center margin-bottom-20">
-                    <img class="image-wrap" src="img/albert.jpg">
-                    <h3 class="name">Albert Jones</h3>
-                    <h4 class="job text-success">Junior Mechanic</h4>
-                    <p>There is nothing better in life than loving your job.</p>
-                </div>
-                <div class="col min-width-250 margin-bottom-20">
-                    <img class="image-wrap" src="img/charles.jpg">
-                    <h3 class="name">Charles Watson</h3>
-                    <h4 class="job text-success">Junior Mechanic</h4>
-                    <p>I am here to proof experience does not equal competence.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="page-footer font-small bg-dark text-light pt-4">
+    <footer class="page-footer font-small bg-dark text-light pt-4 mt-10">
         <div class="container text-center text-md-left">
             <div class="row">
                 <div class="col-md-4 mx-auto">

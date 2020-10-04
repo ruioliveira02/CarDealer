@@ -1,0 +1,13 @@
+﻿.information-row {
+    margin-top: 7px;
+}
+
+.topic {
+    color: var(--success);
+    font-weight: bold;
+}
+
+.image-div-wrapper {
+    margin-top: 30px;
+    justify-content: center;
+}

@@ -2,6 +2,12 @@ var slideIndex = -1; //As showSlides() adds 1 to slide we must start with -1
 var slideCount = 3; 
 showSlides();
 var timeout;
+
+function setSlideCount(n)
+{
+	slideCount = n;
+}
+
 //Change to given slide based on the difference between indices
 function changeSlide(n)
 {
